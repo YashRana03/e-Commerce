@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+/* NAVBAR */
+
 .navbar {
-    background-color: pink;
+    /* #f5a6a9; */
+    background-color: #E65553;
     display: flex;
-    height: 70px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    font-family: 'Calligraffitti', cursive;
+    color: white;
+    font-size: 25px;
    
 
 }
@@ -36,7 +42,64 @@
 }
 
 .cart-icon {
-    color: grey;
+    color: white;
     font-size: 25px;
 
 }
+
+/* NAVBAR END */
+
+
+.intro-container
+ {
+    width: 80%;
+    height: 75vh;
+    background-color: inherit;
+    display: flex;
+    margin: 50px auto;
+ }
+
+ .intro-container img {
+    width: 50%;
+    object-fit: cover;
+ }
+
+ .intro-container div {
+    width: 50%;
+    background-color: #FFEDF8;
+    text-align: center;
+ }
+
+ .discount  {
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+ }
+
+ .discount h2 {
+     font-size: 70px;
+     margin-bottom: 20px;
+
+ }
+
+ .discount p {
+    margin-top: 20px;
+    
+ }
+
+ .discount button {
+    margin: 40px auto;
+    height: 50px;
+    width: 100px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 15px;
+    border: 2px solid black;
+    border-color: black;
+    transition-property: border-color;
+    transition-duration: 1s;
+ }
+
+
