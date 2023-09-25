@@ -1,17 +1,17 @@
 const  shopButtonEl = document.querySelector(".discount button")
 let color = "black"
-console.log(shopButtonEl)
+let padding = 0
 
 setInterval(() => {
-    if(color == "black") {
-        shopButtonEl.style.borderColor = "#828282"
-        color = "#828282"
+    if(padding == 3) {
+        shopButtonEl.style.padding = `${padding}px 5px `
+        padding = 0
         
         
     }
     else {
-        shopButtonEl.style.borderColor = "black"
-        color = "black"
+        shopButtonEl.style.padding = padding + "px"
+        padding = 3
     }
     
 }, 1000)
