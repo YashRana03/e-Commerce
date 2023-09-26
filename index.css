@@ -125,6 +125,9 @@ body {
 
  /* END OF HERO */
 
+
+
+
  /* PRODUCTS */
 
  .products {
@@ -135,8 +138,6 @@ body {
     align-items: center;
     /* background-color: pink; */
  }
-
- 
 
  .products-title {
     font-family: 'Exo 2', sans-serif;
@@ -171,25 +172,23 @@ body {
     align-items: center;
 }
 
-.img-container:hover .cart-btn{
-    transform: translateX(0);
-    opacity: 1;
-    cursor: pointer;
-}
 
-.img-container:hover .product-img{
-    opacity: 0.5;
-    cursor: pointer;
-    
-
-}
 
  .product-img {
+    border-radius: 10px;
     width: 100%;
     position: relative;
     overflow: hidden;
     
  }
+
+ .img-container:hover .cart-btn {
+     transform: translateX(0);
+     opacity: 1;
+     cursor: pointer;
+ }
+
+ 
 
  .cart-btn {
     position: absolute;
@@ -208,19 +207,46 @@ body {
     
  }
 
- .cart-btn:hover {
-    color: whitesmoke; 
-}
-
+ .cart-btn:hover{
+     color: white;
+ }
 
 
  h3 {
     font-family: inherit;
     margin-top: 20px;
  }
+
+ .cart-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: bisque; */
+    /* opacity: 0.3; */
+    background: rgba(100%, 89.41%, 78.86%, 0.3);
+    z-index: 2;
+    /* visibility: hidden; */
+ }
+
+ .cart {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    
+    background-color: red;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; }
  
 
  /* END OF PRODUCTS */
+
+
+ /* CART SECTION */
+
+
 
 
 
