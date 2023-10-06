@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -71,6 +75,7 @@ body {
     background-color: inherit;
     display: flex;
     margin: 50px auto;
+    padding-bottom: 50px;
  }
 
  .hero-container img {
@@ -124,7 +129,8 @@ body {
 
  .discount button:hover {
     cursor: pointer;
-    background-color: #BEA6A1;
+    background-color: ghostwhite;
+    /* #BEA6A1; */
  }
 
  /* END OF HERO */
@@ -148,16 +154,15 @@ body {
     font-size: 20px;
     text-align: center;
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 80px;
  }
 
  .products-container {
     width: 90vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-column-gap: 100px;
+    grid-column-gap: 150px;
     grid-row-gap: 50px;
-    /* background-color: pink; */
  }
 
  .product {
@@ -270,9 +275,14 @@ body {
     position: absolute;
     right: 40px;
     top: 20px;
-    cursor: pointer;
+    
     transform: scale(1.3);
-    }
+}
+
+.close-cart:hover {
+    color: red;
+    cursor: pointer;
+}
 
 .cart h2 {
     margin: 40px 0px;
@@ -283,6 +293,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+    
 
 }
 
@@ -331,7 +342,7 @@ body {
 }
 
 
-/* END OF CART */
+
 
 #chevron:hover {
     color: orangered;
@@ -361,24 +372,75 @@ body {
     cursor: pointer;
 }
 
+/* END OF CART */
+
+
+
+/* MESSAGE DIALOGUE */
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+    background-color: ghostwhite;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.message i {
+    position: absolute;
+    right: 15px;
+}
+
+.message i:hover {
+    color: red;
+}
+
+
+.message h3 {
+    margin-top: 50px;
+    
+}
+
+
+.message button {
+    font-family: inherit;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    border: 3px solid #E65553;
+    background-color: inherit;
+    border-radius: 18px;
+    margin-top: 50px;
+
+}
+
+.message button:hover {
+    background-color: #E65553;
+    color: ghostwhite;
+    cursor: pointer;
+}
+
+
+/* END MESSAGE DIALOGUE */
+
+
+ 
+
+
 @media only screen and (max-width: 700px) {
     .cart {
         width: 100%;
     }
 }
-
-
-#try {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-}
- /* END OF PRODUCTS */
-
-
- /* CART SECTION */
-
-
 
 
 

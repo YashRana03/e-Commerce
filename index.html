@@ -21,9 +21,11 @@
         <h1>Fashion Market</h1>
         <div class="cart-container">
             <span class="cart-icon">
-                <i class="fas fa-cart-plus"></i>
+                <!-- <i class="fas fa-cart-plus"></i> -->
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                <!-- <i>hello</i> -->
             </span>
-            <div class="items-count">5</div>
+            <div class="items-count">0</div>
         </div>
        
         
@@ -40,7 +42,9 @@
                     <h1>SUMMER DISCOUNT</h1>
                     <p>Enjoy huge summer discounts on all our clothes and accessories!</p>
                 </div>
-                <button class="shop">Shop Now</button>
+                <a href="#products"><button class="shop">Shop Now</button></a>
+            
+                
                 
             </div>
         </div> 
@@ -50,7 +54,7 @@
 
 
     <!-- PRODUCTS -->
-    <section class="products">
+    <section class="products" id="products">
 
         <div class="products-title">
             <h2>OUR PRODUCTS</h2>
@@ -63,29 +67,50 @@
     </section>
 
     <!-- END OF PRODUCTS -->
-
+    
     <!-- CART SECTION-->
-    <div class="cart-overlay">
-        <div class="cart">
-            <span class="close-cart">
-                <i class="fas fa-window-close"></i>
-            </span>
-            <h2>Your cart</h2>
-            <div class="cart-list">
-                <!-- CART ITEMS -->
+    <section id="cart">
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                    <!-- <span>close</span> -->
+                </span>
+                <h2>Your cart</h2>
+                <div class="cart-list">
+                    <!-- CART ITEMS -->
 
-                <!-- END OF CART ITEMS -->
-            </div>
-            <div class="cart-footer">
-                <h3>Cart Total: <span>£1000</span></h3>
-                <button class="clear-cart">CLEAR CART</button>
+                    <!-- END OF CART ITEMS -->
+                </div>
+                <div class="cart-footer">
+                    <h3>Cart Total: <span class="cart-total">£0</span></h3>
+                    <button class="clear-cart">CLEAR CART</button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- END OF CART -->
     
+    <!-- MESSAGE DIALOGUE SECTION -->
+     <div class="cart-overlay" id="dialogue">
+        <div class="message">
+            <i class="fa-solid fa-square-xmark"></i>
+            <h3>You arleady have this item in your cart</h3>
+            <button>Go to cart</button>
+        </div>
+    
+    </div>
+    
+    <!-- MESSAGE DIALOGUE SECTION -->
+
+    
+
+   
+    
+    
     
 </body>
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
+<script type="module" src="./data.js"></script>
 </html>
