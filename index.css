@@ -10,6 +10,8 @@ html {
 
 body {
     overflow-x: hidden;
+    width: 100vw;
+    
 }
 
 
@@ -30,6 +32,7 @@ body {
     font-family: 'Calligraffitti', cursive;
     color: white;
     font-size: 25px;
+    width: 100vw;
    
 
 }
@@ -433,16 +436,53 @@ body {
 /* END MESSAGE DIALOGUE */
 
 
- 
+
+/* FOOTER SECTION */
 
 
-@media only screen and (max-width: 700px) {
-    .cart {
-        width: 100%;
-    }
+
+.footer {
+
+    height: 300px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #FF6F91;
+    /* background-color: pink; */
+    /* background-color: #E65553; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 100px;
+    
+
 }
 
+.logos {
+    display: flex;
+    column-gap: 30px;
+    
+}
 
+.logos i:hover {
+    color: white;
+    cursor: pointer;
+}
 
+.made-by {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    color: whitesmoke;
 
+}
+
+.year {
+    font-size: 14px;
+}
+
+/* END FOOTER SECTION */
+ 
 
