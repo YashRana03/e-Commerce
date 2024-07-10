@@ -1,148 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion Market</title>
-    <link href="./index.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
     <!--Font Awesome  -->
-    <script src="https://kit.fontawesome.com/24d8884cbc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/24d8884cbc.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Exo+2:wght@500&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Exo+2:wght@500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FAVICON-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    
-</head>
-<body>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+  </head>
+  <body>
     <!-- NAVBAR  -->
     <nav class="navbar">
-        
-        <h1>Fashion Market</h1>
-        <div class="cart-container">
-            <span class="cart-icon">
-                <!-- <i class="fas fa-cart-plus"></i> -->
-                <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                <!-- <i>hello</i> -->
-            </span>
-            <div class="items-count">0</div>
-        </div>
-       
-        
+      <h1>Fashion Market</h1>
+      <div class="cart-container">
+        <span class="cart-icon">
+          <!-- <i class="fas fa-cart-plus"></i> -->
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+          <!-- <i>hello</i> -->
+        </span>
+        <div class="items-count">0</div>
+      </div>
     </nav>
     <!-- END OF NAVBAR -->
 
     <!-- HERO -->
     <section id="hero">
-        <div class="hero-container">
-            <img src="./images/landing-img.jpg" alt="Image of girl shopping" />
-            <div class="discount">
-                <div class="text">
-                    <h2>30% OFF!</h2>
-                    <h1>SUMMER DISCOUNT</h1>
-                    <p>Enjoy huge summer discounts on all our clothes and accessories!</p>
-                </div>
-                <a href="#products"><button class="shop">Shop Now</button></a>
-            
-                
-                
-            </div>
-        </div> 
+      <div class="hero-container">
+        <img src="./images/landing-img.jpg" alt="Image of girl shopping" />
+        <div class="discount">
+          <div class="text">
+            <h2>30% OFF!</h2>
+            <h1>SUMMER DISCOUNT</h1>
+            <p>
+              Enjoy huge summer discounts on all our clothes and accessories!
+            </p>
+          </div>
+          <a href="#products"><button class="shop">Shop Now</button></a>
+        </div>
+      </div>
     </section>
 
     <!-- END OF HERO-->
 
-
     <!-- PRODUCTS -->
     <section class="products" id="products">
+      <div class="products-title">
+        <h2>OUR PRODUCTS</h2>
+      </div>
 
-        <div class="products-title">
-            <h2>OUR PRODUCTS</h2>
-        </div>
-
-       
-            <div class="products-container">
-            
-            </div>
-  
-        
-
+      <div class="products-container"></div>
     </section>
 
     <!-- END OF PRODUCTS -->
-    
+
     <!-- CART SECTION-->
     <section id="cart">
-        <div class="cart-overlay">
-            <div class="cart">
-                <span class="close-cart">
-                    <i class="fas fa-window-close"></i>
-                    <!-- <span>close</span> -->
-                </span>
-                <h2>Your cart</h2>
-                <div class="cart-list">
-                    <!-- CART ITEMS -->
+      <div class="cart-overlay">
+        <div class="cart">
+          <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+            <!-- <span>close</span> -->
+          </span>
+          <h2>Your cart</h2>
+          <div class="cart-list">
+            <!-- CART ITEMS -->
 
-                    <!-- END OF CART ITEMS -->
-                </div>
-                <div class="cart-footer">
-                    <h3>Cart Total: <span class="cart-total">£0</span></h3>
-                    <button class="clear-cart">CLEAR CART</button>
-                </div>
-            </div>
+            <!-- END OF CART ITEMS -->
+          </div>
+          <div class="cart-footer">
+            <h3>Cart Total: <span class="cart-total">£0</span></h3>
+            <button class="clear-cart">CLEAR CART</button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- END OF CART -->
-    
+
     <!-- MESSAGE DIALOGUE SECTION -->
-     <div class="cart-overlay" id="dialogue">
-        <div class="message">
-            <i class="fa-solid fa-square-xmark"></i>
-            <h3>You arleady have this item in your cart</h3>
-            <button>Go to cart</button>
-        </div>
-    
+    <div class="cart-overlay" id="dialogue">
+      <div class="message">
+        <i class="fa-solid fa-square-xmark"></i>
+        <h3>You arleady have this item in your cart</h3>
+        <button>Go to cart</button>
+      </div>
     </div>
-    
+
     <!-- MESSAGE DIALOGUE SECTION -->
 
     <!-- FOOTER SECTION-->
-    
-    <section id="footer">
-        
-        <div class="footer">
-            <div class="logos">
-                <i class="fa-brands fa-x-twitter fa-2xl"></i>
-                <i class="fa-brands fa-facebook fa-2xl"></i>
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-                <i class="fa-solid fa-envelope fa-2xl"></i>
-            </div>
-            <div class="made-by">
-                <span class="name">Made By YRK</span>
-                <span class="year"><i class="fa-regular fa-copyright fa-sm"></i> 2023</span>
-            </div>
-    
-        </div>
-    
-    </section>
-    
-    
-    <!-- END FOOTER -->
-    
 
-   
-    
-    
-    
-</body>
-<script type="module" src="./index.js"></script>
-<script type="module" src="./data.js"></script>
+    <section id="footer">
+      <div class="footer">
+        <div class="logos">
+          <i class="fa-brands fa-x-twitter fa-2xl"></i>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+        </div>
+        <div class="made-by">
+          <span class="name">Made By YRK</span>
+          <span class="year"
+            ><i class="fa-regular fa-copyright fa-sm"></i> 2023</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- END FOOTER -->
+  </body>
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./data.js"></script>
 </html>
